@@ -1,22 +1,22 @@
 <script setup lang="ts">
-	const props = defineProps<{
-		count : number
-	}>();
-	const emit = defineEmits<{
-		(e : "update:count", event : any) : void
-	}>()
-	const onClick = (event : any) => {
-		emit("update:count", event)
-	};
-	
-	const print = () => {
-		console.log("print");
-	};
-	defineExpose<{
-		print : () => void,
-	}>({
-		print,
-	});
+const { count = 0 } = defineProps<{
+	count: number
+}>();
+const emit = defineEmits<{
+	(e: "update:count", event: any): void
+}>()
+const onClick = (event: any) => {
+	emit("update:count", event)
+};
+
+const print = () => {
+	console.log("print");
+};
+defineExpose<{
+	print: () => void,
+}>({
+	print,
+});
 </script>
 
 <template>
@@ -36,21 +36,21 @@
 
 
 <style lang="scss" scoped>
-	.layout {
-		width: 100%;
+.layout {
+	width: 100%;
 
-		.header {
-			height: 200px;
-			background-color: #ccc;
-		}
-
-		.content {
-			min-height: 200px;
-		}
-
-		.footer {
-			height: 200px;
-			background-color: orange;
-		}
+	.header {
+		height: 200px;
+		background-color: #ccc;
 	}
+
+	.content {
+		min-height: 200px;
+	}
+
+	.footer {
+		height: 200px;
+		background-color: orange;
+	}
+}
 </style>
