@@ -10,10 +10,9 @@
         <view class="center">
             <swiper autoplay circular interval="1500" duration="300" vertical>
                 <swiper-item>
-                    <text>公告内容</text>
-                </swiper-item>
-                <swiper-item>
-                    <text>公告内容公告内容公告内容公告内容公告内容公告内容公告内容</text>
+                    <navigator url="/pages/notice/detail" open-type="navigate" hover-class="navigator-hover">
+                        <text>公告内容公告内容公告内容公告内容公告内容公告内容公告内容</text>
+                    </navigator>
                 </swiper-item>
             </swiper>
         </view>
@@ -31,6 +30,7 @@
     margin: 0 auto;
     background-color: #f9f9f9;
     border-radius: 80rpx;
+    padding: 0 15rpx;
 
     .left {
         width: 140rpx;

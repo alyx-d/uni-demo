@@ -4,9 +4,7 @@
 <template>
     <view class="sub-title">
         <view class="title">
-            <text>
-                <slot name="title">title</slot>
-            </text>
+            <slot name="title">title</slot>
         </view>
         <view class="custome">
             <slot name="default">default</slot>
@@ -21,9 +19,11 @@
     justify-content: space-between;
     align-items: center;
 
-    text {
+    .title {
+        height: 100%;
         font-size: 40rpx;
         font-weight: bold;
     }
+
 }
 </style>

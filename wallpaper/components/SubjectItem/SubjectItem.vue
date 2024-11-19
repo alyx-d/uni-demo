@@ -7,19 +7,19 @@ const props = defineProps<{
 <template>
     <view class="subject-item">
         <view class="box" v-if="!props.isMore">
-            <navigator url="/pages/index/index" open-type="navigate" hover-class="navigator-hover">
+            <navigator url="/pages/classlist/classlist" open-type="navigate" hover-class="navigator-hover">
                 <view class="top-tip">3天前更新</view>
                 <view class="wrapper">
-                    <image class="image" src="/common/images/classify1.jpg" mode="aspectFill" />
+                    <image class="image" src="/static/images/classify1.jpg" mode="aspectFill" />
                 </view>
                 <view class="mask">明星美女</view>
             </navigator>
         </view>
 
         <view class="box more" v-if="props.isMore">
-            <navigator url="/pages/index/index" open-type="navigate" hover-class="navigator-hover">
+            <navigator url="/pages/classify/classify" open-type="reLaunch" hover-class="navigator-hover">
                 <view class="wrapper">
-                    <image class="image" src="/common/images/more.jpg" mode="aspectFill" />
+                    <image class="image" src="/static/images/more.jpg" mode="aspectFill" />
                 </view>
                 <view class="mask">
                     <uni-icons type="more" color="#fff" size="24" />

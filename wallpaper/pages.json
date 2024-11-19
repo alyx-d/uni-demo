@@ -3,21 +3,54 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path" : "pages/classify/classify",
-			"style" : 
+			"path": "pages/classify/classify",
+			"style":
 			{
-				"navigationBarTitleText" : "分类"
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path" : "pages/user/user",
+			"path": "pages/user/user",
+			"style":
+			{
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+				
+			}
+		},
+		{
+			"path" : "pages/classlist/classlist",
 			"style" : 
 			{
-				"navigationBarTitleText" : "我的"
+				"navigationBarTitleText" : "分类列表"
+			}
+		},
+		{
+			"path" : "pages/preview/preview",
+			"style" : 
+			{
+				"navigationBarTitleText" : "预览",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/notice/notice",
+			"style" : 
+			{
+				"navigationBarTitleText" : "公告"
+			}
+		},
+		{
+			"path" : "pages/notice/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "公告详情"
 			}
 		}
 	],
@@ -25,9 +58,10 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "AX壁纸",
 		"navigationBarBackgroundColor": "#fff",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": false
 	},
-	"uniIdRouter": {},
+	"uniIdRouter": { },
 	"tabBar": {
 		"list": [
 			{

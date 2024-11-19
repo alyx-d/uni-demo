@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<view class="user">
+	<view class="user page-bg">
 		<view class="user-info">
 			<view class="avatar">
 				<image class="image" src="/static/xxm-logo.png" mode="aspectFill" />
@@ -16,11 +16,14 @@
 			</view>
 		</view>
 		<view class="menu-group">
-			<UserMenuItem title="我的收藏" icon="heart-filled" :count="12" url="0" v-for="item in 3" />
+			<UserMenuItem title="我的下载" icon="download-filled" :count="12" url="/pages/classlist/classlist" />
+			<UserMenuItem title="我的评分" icon="star-filled" :count="12" url="/pages/classlist/classlist" />
+			<UserMenuItem title="联系客服" icon="chat-filled" />
 		</view>
 
 		<view class="menu-group">
-			<UserMenuItem title="我的收藏" icon="heart-filled" v-for="item in 3" />
+			<UserMenuItem title="订阅更新" icon="notification-filled" />
+			<UserMenuItem title="常见问题" icon="flag-filled" />
 		</view>
 	</view>
 </template>
@@ -32,7 +35,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 50rpx 0;
+		padding: 100rpx 0;
 
 		.avatar {
 			width: 160rpx;

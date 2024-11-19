@@ -1,9 +1,31 @@
-* {
+html,
+body,
+page {
     margin: 0;
     padding: 0;
+}
+
+view,
+swiper,
+swiper-item {
     box-sizing: border-box;
 }
 
-:root {
+:root,
+page {
     --main-color: #28b389;
+    --bg-color: #beecd8;
+    --second-color: #f4e2d8;
+    --text-color-1: #000;
+    --text-color-2: #676767;
+    --text-color-3: #a7a7a7;
+    --text-color-4: #e4e4e4;
+    --rate-text-color: #ffca3e;
+}
+
+.page-bg {
+    z-index: -1;
+    background: linear-gradient(to bottom, transparent, white 400rpx),
+        linear-gradient(to right, var(--bg-color), var(--second-color));
+    min-height: 80vh;
 }

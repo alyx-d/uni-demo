@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
-
 </script>
 
 <template>
-    <view class="index">
+    <view class="index page-bg">
+        <TopNavBar title="推荐"></TopNavBar>
         <BannerImage></BannerImage>
         <Notice></Notice>
         <view class="recommend">
@@ -21,7 +21,9 @@
             <view class="content">
                 <scroll-view class="scroll-view" scroll-x>
                     <view class="wrapper" v-for="item in 10" :key="item">
-                        <image src="/common/images/preview_small.webp" mode="widthFix" />
+                        <navigator url="/pages/preview/preview" open-type="navigate" hover-class="navigator-hover">
+                            <image src="/static/images/preview_small.webp" mode="widthFix" />
+                        </navigator>
                     </view>
                 </scroll-view>
             </view>
